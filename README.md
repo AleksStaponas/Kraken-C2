@@ -47,9 +47,6 @@ Critical phase with timer and increased demands, file deletion if requirements a
   <img src="images/FileLocker_RedPhase.JPG" alt="SecondPhase" />
 </p>
 
-# Updates
-Cross-platform server with automated command deployment and privilege escalation support for Windows and Linux using LinPEAS and WinPEAS.
-
 ### Current features
 
 - **TLS Encrypted Communication:** Secure connections via Java `SSLServerSocket`.
