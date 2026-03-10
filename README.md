@@ -1,23 +1,4 @@
-## Legal Disclaimer
-
-This software is provided **strictly for educational, research, and ethical practice purposes only**.
-
--  **Do NOT use this tool on any system you do not own or have explicit permission to test.**
--  **Unauthorized use of this software may be illegal and is strictly prohibited.**
--  **The author takes no responsibility for any damage, data loss, or legal consequences resulting from misuse.**
-
-By using this software, you agree to use it **ethically, lawfully**, and in **controlled environments such as virtual labs, or testing networks with legal permission**.
-
-This tool is intended to help raise awareness and understanding of security threats — **not to promote or enable criminal activity**.
-
-> **If anything is still unclear, read the full [Code of Conduct](CODE_OF_CONDUCT.md). The author is not responsible for misuse or misunderstanding of this software.**
-
-## Safety Features
-
-- **Safe Decrypt Option:** Instantly restores files to prevent damage during testing.  
-- **Reverse Shell:** Runs via Windows CMD for controlled simulation and has a connector for testing.  
-- **Limited Impact:** Only files in a safe test folder are affected.
-- **Sandboxed Directory** Preventing any other files being accessed in the file server.
+# CobaltLock
 
 ## Fake Grub Restart
 A fake GRUB loading screen is used as a distraction, allowing files to be encrypted. Following this, it has often been seen in real-world scenarios, such as fake shutdowns being used to allow an attacker to, e.g. , escalate privileges or even maintain persistence. However, after the fake GRUB restart, it continues to the Initial Phase.
@@ -58,6 +39,13 @@ Critical phase with timer and increased demands, file deletion if requirements a
 - **Directory and file creator** The script generates fake, encrypted-style files and directories with randomized timestamps within the past year mimicking common APT distraction methods.
 - **Linux & Windows** The script now deploys the correct screen depending on operating system.
 
+## Safety Features
+
+- **Safe Decrypt Option:** Instantly restores files to prevent damage during testing.  
+- **Reverse Shell:** Runs via Windows CMD for controlled simulation and has a connector for testing.  
+- **Limited Impact:** Only files in a safe test folder are affected.
+- **Sandboxed Directory** Preventing any other files being accessed in the file server.
+
 # TLS Keystore Setup
 
 This project requires a Java keystore for TLS.
@@ -69,3 +57,17 @@ Run the following command:
 ```bash
 keytool -genkeypair -alias server -keyalg RSA -keysize 2048 -keystore server.keystore -storepass changeit -keypass changeit -dname "CN=localhost, OU=Dev, O=MyOrg, L=MyCity, S=MyState, C=US" -validity 365
 ```
+
+## Legal Disclaimer
+
+This software is provided **strictly for educational, research, and ethical practice purposes only**.
+
+-  **Do NOT use this tool on any system you do not own or have explicit permission to test.**
+-  **Unauthorized use of this software may be illegal and is strictly prohibited.**
+-  **The author takes no responsibility for any damage, data loss, or legal consequences resulting from misuse.**
+
+By using this software, you agree to use it **ethically, lawfully**, and in **controlled environments such as virtual labs, or testing networks with legal permission**.
+
+This tool is intended to help raise awareness and understanding of security threats — **not to promote or enable criminal activity**.
+
+> **If anything is still unclear, read the full [Code of Conduct](CODE_OF_CONDUCT.md). The author is not responsible for misuse or misunderstanding of this software.**
