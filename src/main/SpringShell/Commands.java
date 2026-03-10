@@ -71,19 +71,17 @@ public class Commands {
         return "";
 
     }
-
-
+    
     @ShellComponent
     public static class listeners {
 
         @ShellMethod(key = "https", value = "Start HTTPS listener on a specified port")
         public String httpsListener() {
-
             Scanner scanner = new Scanner(System.in);
 
             System.out.println("Enter port of the HTTPS listener");
             int port = scanner.nextInt();
-            portNumberCheck(port);
+            port = portNumberCheck(port); 
 
             System.out.println("Enter the number of maximum concurrent visitors.");
             int visitorThread = scanner.nextInt();
@@ -138,7 +136,7 @@ public class Commands {
                 int Port = port;
                 boolean Active = true;
 
-                processWriter(ID,Protocol, String.valueOf(IP),Port,Active);
+                processWriter(ID, Protocol, String.valueOf(IP), Port, Active);
 
                 return "Starting HTTPS server";
             } catch (Exception exception) {
@@ -158,7 +156,7 @@ public class Commands {
                 Output_Stream.write(Response.getBytes());
                 Output_Stream.close();
             }
-
+        }
 
         @ShellMethod(key = "http", value = "Start HTTP listener on a specified port")
         public String httpListener() {
@@ -167,6 +165,7 @@ public class Commands {
 
             System.out.println("Enter port of HTTP listener");
             int port = scanner.nextInt();
+            port = portNumberCheck(port); 
 
             System.out.println("Starting HTTP listener");
 
@@ -184,7 +183,7 @@ public class Commands {
                 int Port = port;
                 boolean Active = true;
 
-                processWriter(ID,Protocol, String.valueOf(IP),Port,Active);
+                processWriter(ID, Protocol, String.valueOf(IP), Port, Active);
 
                 return ("Server is running on port " + port);
             } catch (IOException e) {
@@ -203,6 +202,7 @@ public class Commands {
                 os.close();
             }
         }
+
     }
 
     @ShellComponent
@@ -375,6 +375,5 @@ public class Commands {
         return "Welcome to Kraken C2. This tool is currently under development, so some features may not be fully functional.\n" +
                 "This tool has been made for research and educational purposes. If you want to report issues with the tool,\n" +
                 "such as bugs, you can report them on the GitHub repository. This would be greatly appreciated.";
-         }
+        }
     }
-}
