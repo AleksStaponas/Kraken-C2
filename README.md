@@ -58,16 +58,7 @@ Starting proxy for 127.0.0.1:4444 on port 5555
 Proxy server started.
 ```
 
-```
-Kraken > license
-Welcome to Kraken C2. This tool is currently under development, so some features may not be fully functional.
-This tool has been made for research and educational purposes. If you want to report issues with the tool,
-such as bugs, you can report them on the GitHub repository. This would be greatly appreciated.
-```
-Features planned to be implemented 
-
-- User Authentication: Implementing a secure login system using (HttpOnly cookies) to access the control panel.
-- Basic payload creation with simple encoding (Base 64)
+### Current features
 
 ## Legal Disclaimer
 
