@@ -50,6 +50,11 @@ li a i {
     padding: 10px 0;
 }
 
+.nav-links li a.active {
+    border-left: 3px solid #b60111;
+    padding-left: 11px;
+}
+
 .nav-links li a:hover {
     background-color: #333333;
 }

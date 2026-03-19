@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './style.css';
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 const Botnet = () => {
     useEffect(() => {
@@ -34,40 +34,40 @@ const Botnet = () => {
                 </a>
                 <ul className="nav-links">
                     <li>
-                        <Link to="/menu">
+                        <NavLink to="/menu">
                             <i className="bx bxs-menu"></i>
                             <span>Menu</span>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/configure">
+                        <NavLink to="/configure">
                             <i className="bx bxs-cog"></i>
                             <span>Configure</span>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/botnet">
+                        <NavLink to="/botnet">
                             <i className="bx bxs-desktop"></i>
                             <span>Botnet</span>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/terminal">
+                        <NavLink to="/terminal">
                             <i className="bx bxs-terminal"></i>
                             <span>Terminal</span>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/file-server">
+                        <NavLink to="/file-server">
                             <i className="bx bxs-server"></i>
                             <span>File-server</span>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/logs">
+                        <NavLink to="/logs">
                             <i className="bx bxs-file"></i>
                             <span>Logs</span>
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
             </div>

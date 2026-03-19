@@ -54,6 +54,11 @@ li a i {
     background-color: #333333;
 }
 
+.nav-links li a.active {
+    border-left: 3px solid #b60111;
+    padding-left: 11px;
+}
+
 .nav-links li a {
     color: #fff;
     text-decoration: none;
