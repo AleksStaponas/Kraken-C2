@@ -1,7 +1,7 @@
-# Code of Conduct – CobaltLock
+# Code of Conduct – Kraken-C2
 
 ## 1. Purpose
-CobaltLock is an **educational ransomware simulation lab**. It is intended for **controlled, offline, or sandboxed environments only**. The project demonstrates offensive security concepts, anti-forensics techniques, and lab-based experimentation for **learning and research purposes**.
+Kraken-C2 is an **educational C2-Server**. It is intended for **controlled, offline, or sandboxed environments only**. The project demonstrates offensive security concepts, anti-forensics techniques, and lab-based experimentation for **learning and research purposes**.
 
 ## 2. Acceptable Use
 - This software **must never be run on live, production, or third-party systems**.  
