@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #111827;
+}
+.side-nav {
+    width: 250px;
+    height: 100%;
+    background: #0b0f14;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+    font-size: x-large;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+li a i {
+    position: relative;
+    top: 4px;
+    width: 100%;
+}
+
+.logo {
+    display: block;
+    margin-bottom: 130px;
+}
+.nav-links {
+    left: -20px;
+    list-style: none;
+    position: relative;
+    width: 120%;
+}
+
+.nav-links li {
+    padding: 10px 0;
+}
+
+.nav-links li a:hover {
+    background-color: #333333;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 14px;
+    width: 100%;
+}
+nav {
+    grid-area: navbar;
+    background-color: #b22222;
+    padding: 1.5em;
+    overflow: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.5px;
+    float: right;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.container {
+    border-radius: 25px;
+    height: 850px;
+    width: 1630px;
+    display: flex;
+    background-color: #ffffff;
+    z-index: 2;
+    position: relative;
+    top: 20px;
+    left: 270px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.box.active p {
+    position: fixed;
+    text-align: start;
+    transition:
+            background-color 0.3s ease,
+            width 0.2s ease,
+            height 0.3s ease;
+}
+
+.box p {
+    color: white;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace, bold;
+    user-select: none;
+}
+
+.image {
+    width: 100px;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+br {
+    user-select: none;
+}
+
+#Menu {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    padding: 10px 20px;
+    color: white;
+    position: fixed;
+    top: 10px;
+    left: 260px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+body,
+html {
+    overflow: hidden;
+    height: 100%;
+}
