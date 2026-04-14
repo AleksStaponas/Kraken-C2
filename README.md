@@ -15,50 +15,12 @@
 This branch will focus on transforming CobaltLock into a fully functional, ethical full-stack C2 (Command and Control) server, utilizing the following technologies:
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=java,html,css,js,react,postgres,mongodb" />
+    <img src="https://skillicons.dev/icons?i=java,go,html,css,js,react,postgres,mongodb,docker" />
   </a>
 </p>
 
-Current features
-- Lightweight C2 shell supporting HTTP and HTTPS commands (payload building not included).
-- Basic website (still in progress)
+## Documentation
 
-Command demonstration
-
-```
-Kraken > http
-Enter port of HTTP listener
-1234
-Starting HTTP listener
-Server is running on port 1234
-```
-
-```
-Kraken > https
-Enter port of the HTTPS listener
-1234
-Enter the number of maximum concurrent visitors.
-10
-Starting HTTPS server
-```
-
-```
-Kraken > start proxy/http
-To configure the proxy server you will need to enter: 
-RHOST: The IP address of the server to forward data to 
-RPORT: The port of the server to forward data to 
-LPORT: The local port it will run on
-Enter RHOST
-127.0.0.1
-Enter RPORT
-4444
-Enter LPORT
-5555
-Starting proxy for 127.0.0.1:4444 on port 5555
-Proxy server started.
-```
-
-### Current features
 
 ## Legal Disclaimer
 

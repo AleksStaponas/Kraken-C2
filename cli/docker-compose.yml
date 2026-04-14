@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  app:
+    build: ..
+    ports:
+      - "9090:9090"
+
+  java-shell:
+    build: ./cli
+    stdin_open: true
+    tty: true
+
+  postgres:
+    image: postgres:15
+
+  mongo:
+    image: mongo:6
